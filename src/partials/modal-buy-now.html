@@ -1,0 +1,112 @@
+<!-- backdrop -->
+<div class="backdrop is-hidden" data-modal-buy-now>
+  <!-- Modal Buy Now -->
+  <div class="modal-buy-now modal-window">
+    <!-- Close-btn -->
+    <button
+      type="button"
+      class="modal-window__btn-close"
+      data-modal-close-buy-now
+    >
+      <svg class="modal-window__icon-close">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <!-- /Close btn -->
+    <!-- title -->
+    <p class="modal-window__title">Buy now</p>
+    <!-- /title -->
+    <!-- form -->
+    <form action="#" class="modal-buy-now__form">
+      <!-- list of goods -->
+      <ul class="modal-buy-now__list list">
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Ice cream"
+              class="modal-buy-now__check modal-buy-now__check_green visually-hidden"
+              id="check-icecream"
+            />
+            <label
+              for="check-icecream"
+              class="modal-buy-now__label modal-buy-now__label_green"
+            >
+              <span class="modal-buy-now__img modal-buy-now__img_green"></span>
+              <span class="modal-buy-now__text">Ice cream</span>
+            </label>
+          </div>
+        </li>
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Ice coffee"
+              class="modal-buy-now__check modal-buy-now__check_yellow visually-hidden"
+              id="check-icecoffee"
+            />
+            <label
+              for="check-icecoffee"
+              class="modal-buy-now__label modal-buy-now__label_yellow"
+            >
+              <span class="modal-buy-now__img modal-buy-now__img_yellow"></span>
+              <span class="modal-buy-now__text">Ice coffee</span>
+            </label>
+          </div>
+        </li>
+        <li class="modal-buy-now__item">
+          <div class="modal-buy-now__thumb">
+            <input
+              type="checkbox"
+              name="Milkshake"
+              class="modal-buy-now__check modal-buy-now__check_brown visually-hidden"
+              id="check-milkshake"
+            />
+            <label
+              for="check-milkshake"
+              class="modal-buy-now__label modal-buy-now__label_brown"
+            >
+              <span class="modal-buy-now__img modal-buy-now__img_brown"></span>
+              <span class="modal-buy-now__text">Milkshake</span>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <!-- /list of goods -->
+      <!-- modal-contacts info -->
+      <div class="modal-contacts">
+        <input
+          type="text"
+          name="user-sname"
+          class="modal-contacts__user-name"
+          placeholder="Name"
+          minlength="2"
+          pattern="[a-zA-Zа-яА-ЯїЇіІ]+"
+          required
+        />
+        <input
+          type="tel"
+          name="telephone"
+          class="modal-contacts__phone"
+          placeholder="Phone"
+          pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+          title="Формат: 0671234567"
+          required
+        />
+        <textarea
+          name="comments"
+          id="comments"
+          class="modal-contacts__comments"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <!-- /contacts info -->
+      <button type="submit" class="modal-buy-now__btn read-button">
+        Submit
+      </button>
+    </form>
+    <!-- /form -->
+  </div>
+  <!-- /Modal Buy Now -->
+</div>
+<!-- /backdrop -->

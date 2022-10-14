@@ -1,0 +1,118 @@
+.testimonials {
+    text-align: center;
+    padding: 75px 0;
+}
+
+.testimonials__container {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials__wrapper {
+    position: relative;
+}
+
+.testimonials__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: .6s ease;
+    margin-bottom: 14px;
+
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.testimonials__image {
+    height: 85px;
+    width: 85px;
+    margin-bottom: 32px;
+}
+
+.testimonials__text {
+    margin-bottom: 30px;
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+    padding: 34px 39px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.testimonials__name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+    text-align: center;
+    color: var(--secondary-text-color);
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.dot {
+    background: none;
+    border: none;
+    outline: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #D9D9D9;
+    transition: .5s;
+}
+
+.active {
+    width: 32px;
+    background-color: var(--primary-bg-color);
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    .testimonials__text {
+        width: 440px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .testimonials__text {
+        width: 705px;
+        padding: 29px 80px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .testimonials__text {
+        width: 968px;
+        font-weight: 500;
+        font-size: 16px;
+        border-radius: 24px;
+    }
+}

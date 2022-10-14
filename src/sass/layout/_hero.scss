@@ -1,0 +1,210 @@
+.hero {
+  background-color: #84a178;
+}
+.hero-container {
+  height: 500px;
+  min-width:320px;
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  column-gap: 10px;
+  background-image:url('../images/hero/big-icecream-mobile@2x.png') , url('../images/hero/gradient-mobile.webp') , url('../images/hero/dots-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom, bottom center, bottom center;
+  background-size: 170px, 230px, contain;
+  @media screen and (min-width: 768px) {
+    flex-direction: inherit;
+    padding-top:104px;
+    height: 415px;
+    background-image: url('../images/hero/big-icecream-tablet@2x.png') , url('../images/hero/gradient-tablet.webp') , url('../images/hero/dots-tablet.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right 120px, bottom -50px right 60px, bottom;
+    background-size: 270px,350px, contain;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top:118px;
+    height: 664px;
+    background-image: url('../images/hero/hero-big-icecream-desktop@2x.webp') , url('../images/hero/gradient-desktop.webp')  , url('../images/hero/dots-desctop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right 90px,bottom -30px right 50px,bottom;
+    background-size:484px,570px,contain;
+  }
+}
+.hero-container__left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  @media screen and (min-width: 768px) {
+    
+    width: 336px;
+    align-self: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 439px;
+    align-self: flex-start;
+  }
+
+}
+.title-block__title {
+    font-family: Seymour One, sans-serif;
+    color: rgba(252, 252, 252, 1);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    max-width: 247px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      max-width: 183px;
+      margin-bottom: 20px;
+      }
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      max-width: 367px;
+      line-height: 1.2;
+    }
+    
+  }
+  .title-block__title span {
+    font-size: 34px;
+    line-height: 0.6;
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 0.9;
+      }
+    @media screen and (min-width: 1200px) { 
+      font-size: 38px;
+      line-height: 1.2;
+    }
+  }
+  .title-block__button {
+
+    @media screen and (min-width: 768px) and (max-width:1200px) { 
+      font-size: 8px;
+      padding: 8px 12px;
+      line-height: 1;
+    }
+  }
+
+.title-block__buttons {
+  display: flex;
+  gap: 8px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+  margin-bottom: 44px;
+  }
+}  
+.happy-icecream {
+
+  @media screen and (min-width: 768px) {
+    width:fit-content;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    align-self: flex-end;
+    justify-content: flex-start;
+  }
+  }
+.hero-image__ice-cream {
+  width: 170px;
+  height: 210px;
+  
+}
+.hero__icecream-plate {
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: start;
+    gap: 23px;
+    align-items: center;
+    width: 336px;
+
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+    gap: 14px;
+    align-items: center;
+  }
+
+}
+.icecream-plate__img {
+  // width: 150px;
+  // height: 152px;
+}
+.icecream-plate__text {
+  width:200px;
+  height: 80px;
+  font-size: 12px;
+  line-height: 1.4;
+  & p {
+    margin-bottom:10px;
+  }
+}
+
+.icecream-plate__button {
+  text-align: left;
+  fill: var(--tel-text-color);
+  cursor: pointer;
+  border-radius: 0;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  display: flex;
+  transition: var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    fill:var(--secondary-text-color);
+  }
+}
+.hero__achiev-box {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 52px;
+  }
+
+}
+.achiev-list__numbers {
+  position: relative;
+  margin-bottom: 2px;
+  font-family: var(--text-secondary);
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 1.2;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 1.152;
+    }
+  }
+  .achiev-list__desc {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: var(--tel-text-color);
+  }
+  .achiev-list__item:first-child {
+    margin-bottom: 13px;
+    @media screen and (min-width: 1280px){
+      &:first-child {
+        margin-bottom: 18px;
+        }
+    }
+  }
